@@ -351,7 +351,6 @@ def check_units(ds: pd.DataFrame, ds_md: dict) -> list:
     for column in ds.columns:
         test = pd.to_numeric(ds[column], errors='coerce').fillna(0)
         if str(unit_to_min_num) and (test < unit_to_min_num).any():
-            print(column)
             violates_unit.append(column)
         if str(unit_to_max_num) and (test >= unit_to_max_num).any():
             violates_unit.append(column)
