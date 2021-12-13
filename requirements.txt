@@ -14,4 +14,4 @@ hdx-python-utilities==1.7.7
 html5lib==1.0.1
 urllib3==1.25.3
 wbdata==0.2.7
-lxml==4.4.1
+lxml==4.6.5
